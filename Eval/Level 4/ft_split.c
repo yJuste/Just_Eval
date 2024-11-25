@@ -6,7 +6,7 @@
 /*   By: jlongin <jlongin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 09:53:47 by jlongin           #+#    #+#             */
-/*   Updated: 2024/11/25 10:54:07 by jlongin          ###   ########.fr       */
+/*   Updated: 2024/11/25 16:26:22 by jlongin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*
@@ -67,7 +67,7 @@ char	**ft_split(char *str)
 	i = 0;
 	while (str[i])
 	{
-		while (str[i] == ' ' || str[i] == '\t' || str[i] == '\n') 
+		while (str[i] == ' ' || str[i] == '\t' || str[i] == '\n')
 			i++;
 		if (str[i])
 			j = i;

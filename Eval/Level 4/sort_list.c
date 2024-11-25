@@ -6,7 +6,7 @@
 /*   By: jlongin <jlongin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 13:18:41 by jlongin           #+#    #+#             */
-/*   Updated: 2024/11/25 13:42:57 by jlongin          ###   ########.fr       */
+/*   Updated: 2024/11/25 16:26:02 by jlongin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*
@@ -44,7 +44,7 @@ int ascending(int a, int b)
 }
 */
 
-t_list	*sort_list(t_list* lst, int (*cmp)(int, int));
+t_list	*sort_list(t_list *lst, int (*cmp)(int, int))
 {
 	int		x;
 	t_list	*start;

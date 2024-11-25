@@ -6,7 +6,7 @@
 /*   By: jlongin <jlongin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 09:45:09 by jlongin           #+#    #+#             */
-/*   Updated: 2024/11/25 09:54:30 by jlongin          ###   ########.fr       */
+/*   Updated: 2024/11/25 16:27:05 by jlongin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*
@@ -53,7 +53,7 @@ char	*ft_itoa(int nbr)
 	n = nbr;
 	len = 0;
 	if (n == -2147483648)
-		return (ft_strdup("-2147483648"))
+		return (ft_strdup("-2147483648"));
 	if (n <= 0)
 		len++;
 	while (n)
