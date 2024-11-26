@@ -1,33 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   is_power_of_2.c                                    :+:      :+:    :+:   */
+/*   print_bits.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jlongin <jlongin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/24 12:55:19 by jlongin           #+#    #+#             */
-/*   Updated: 2024/11/24 15:12:18 by jlongin          ###   ########.fr       */
+/*   Created: 2024/11/27 00:07:32 by jlongin           #+#    #+#             */
+/*   Updated: 2024/11/27 00:10:35 by jlongin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*
-Assignment name  : is_power_of_2
-Expected files   : is_power_of_2.c
-Allowed functions: None
+Assignment name  : print_bits
+Expected files   : print_bits.c
+Allowed functions: write
 --------------------------------------------------------------------------------
 
-Write a function that determines if a given number is a power of 2.
-
-This function returns 1 if the given number is a power of 2,
-otherwise it returns 0.
+Write a function that takes a byte, and prints it in binary WITHOUT A NEWLINE
+AT THE END.
 
 Your function must be declared as follows:
 
-int	    is_power_of_2(unsigned int n);
-*/
+void	print_bits(unsigned char octet);
 
-int	is_power_of_2(unsigned int n)
+Example, if you pass 2 to print_bits, it will print "00000010"
+*/
+#include <unistd.h>
+
+void	print_bits(unsigned char octet)
 {
-	if (n == 0)
-		return (0);
-	return ((n & (n - 1)) == 0);
+	int				i;
+	unsigned char	bit;
+
+	i = 8;
+	while (i--)
+	{
+		bit = (octet >> i & 1) + '0';
+		write(1, &bit, 1);
+	}
 }
