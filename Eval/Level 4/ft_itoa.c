@@ -27,6 +27,7 @@ char	*ft_itoa(int nbr);
 char	*ft_strdup(char *s)
 {
 	int		i;
+	char	*res;
 
 	i = 0;
 	while (s[i])
@@ -77,7 +78,7 @@ char	*ft_itoa(int nbr)
 	}
 	while (nbr)
 	{
-		res[--len] = res % 10 + '0';
+		res[--len] = nbr % 10 + '0';
 		nbr /= 10;
 	}
 	return (res);

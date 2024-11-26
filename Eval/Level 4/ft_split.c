@@ -37,6 +37,8 @@ char	*ft_strncpy(char *dest, char *src, int n)
 		dest[i] = src[i];
 		i++;
 	}
+	if (i < n)
+		dest[i] = '\0';
 	dest[i] = '\0';
 	return (dest);
 }
@@ -47,6 +49,7 @@ char	**ft_split(char *str)
 	int		i;
 	int		j;
 	int		k;
+	char	**res;
 
 	wc = 0;
 	i = 0;
@@ -76,8 +79,7 @@ char	**ft_split(char *str)
 		if (i > j)
 		{
 			res[k] = malloc(sizeof(char) * (i - j + 1));
-			ft_strncpy(res[k], str + j, i - j);
-			k++;
+			ft_strncpy(res[k++], str + j, i - j);
 		}
 	}
 	res[k] = NULL;

@@ -39,24 +39,31 @@ $>
 
 void	ft_list_remove_if(t_list **begin_list, void *data_ref, int (*cmp)())
 {
-	t_list		*cur;
 	t_list		*temp;
+	t_list		*prev;
+	t_list		*cur;
 
-	cur = *begin_list;
 	if (!begin_list || !(*begin_list))
 		return ;
+	cur = *begin_list;
+	prev = NULL;
 	while (cur)
 	{
 		if (cmp(cur->data, data_ref) == 0)
 		{
 			temp = cur;
-			if (cur == *begin_list)
+			if (prev)
+				prev->next = cur->next;
+			else
 				*begin_list = cur->next;
 			cur = cur->next;
 			free(temp->data);
 			free(temp);
 		}
 		else
+		{
+			prev = cur;
 			cur = cur->next;
+		}
 	}
 }

@@ -55,23 +55,22 @@ int	main(int argc, char **argv)
 	if (argc == 2)
 	{
 		n = atoi(argv[1]);
-		i = 2;
 		if (n == 1)
 			return (printf("1\n"));
-		while (i <= n)
+		i = 2;
+		while (i * i <= n)
 		{
-			if (n % i == 0)
+			while (n % i == 0)
 			{
 				printf("%d", i);
 				n /= i;
 				if (n > 1)
 					printf("*");
-				else
-					break ;
-				i = 1;
 			}
 			i++;
 		}
+		if (n > 1)
+			printf("%d", n);
 	}
 	printf("\n");
 	return (0);
