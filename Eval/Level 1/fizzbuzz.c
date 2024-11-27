@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   fizzbuzz.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jlongin <jlongin@student.42.fr>            +#+  +:+       +#+        */
+/*   By:                                            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/21 15:20:53 by jlongin           #+#    #+#             */
-/*   Updated: 2024/11/21 16:53:28 by jlongin          ###   ########.fr       */
+/*   Created:   by Just'                               #+#    #+#             */
+/*   Updated:   by Just'                              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*
@@ -54,7 +54,7 @@ $>
 
 void	ft_putnbr(int n)
 {
-	char	digit;
+	char		digit;
 
 	if (n >= 10)
 		ft_putnbr(n / 10);

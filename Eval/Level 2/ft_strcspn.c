@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strcspn.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jlongin <jlongin@student.42.fr>            +#+  +:+       +#+        */
+/*   By:                                            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/23 14:51:08 by jlongin           #+#    #+#             */
-/*   Updated: 2024/11/27 12:23:45 by jlongin          ###   ########.fr       */
+/*   Created:   by Just'                               #+#    #+#             */
+/*   Updated:   by Just'                              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*
@@ -23,8 +23,6 @@ The function should be prototyped as follows:
 size_t	ft_strcspn(const char *s, const char *reject);
 */
 #include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
 
 size_t	ft_strcspn(const char *s, const char *reject)
 {
