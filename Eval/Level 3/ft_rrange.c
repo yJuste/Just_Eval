@@ -30,6 +30,7 @@ Examples:
 - With (0, 0) you will return an array containing 0.
 - With (0, -3) you will return an array containing -3, -2, -1 and 0.
 */
+#include <stdlib.h>
 
 int	*ft_rrange(int start, int end)
 {

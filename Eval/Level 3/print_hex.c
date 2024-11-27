@@ -45,7 +45,7 @@ int	ft_atoi(char *s)
 
 void	ft_puthexa(int n)
 {
-	char		str[16];
+	char		*str;
 
 	str = "0123456789abcdef";
 	if (n >= 16)

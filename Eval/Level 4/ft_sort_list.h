@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrev.c                                        :+:      :+:    :+:   */
+/*   ft_sort_list.h                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By:                                            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -9,49 +9,15 @@
 /*   Updated:   by Just'                              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*
-Assignment name  : ft_strrev
-Expected files   : ft_strrev.c
-Allowed functions:
---------------------------------------------------------------------------------
+#ifndef FT_SORT_LIST_H
+# define FT_SORT_LIST_H
 
-Write a function that reverses (in-place) a string.
+// Structure
 
-It must return its parameter.
-
-Your function must be declared as follows:
-
-char    *ft_strrev(char *str);
-*/
-
-int	ft_strlen(char *s)
+typedef struct s_list
 {
-	int		i;
+	int				data;
+	struct s_list	*next;
+}		t_list;
 
-	i = 0;
-	while (s[i])
-		i++;
-	return (i);
-}
-
-void	ft_swap(char *a, char *b)
-{
-	char		x;
-
-	x = *a;
-	*a = *b;
-	*b = x;
-}
-
-char	*ft_strrev(char *str)
-{
-	int		i;
-
-	i = 0;
-	while (i < ft_strlen(str) / 2)
-	{
-		ft_swap(&str[i], &str[ft_strlen(str) - i - 1]);
-		i++;
-	}
-	return (str);
-}
+#endif
