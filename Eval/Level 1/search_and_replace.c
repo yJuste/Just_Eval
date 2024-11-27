@@ -6,7 +6,7 @@
 /*   By: jlongin <jlongin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/22 18:06:04 by jlongin           #+#    #+#             */
-/*   Updated: 2024/11/22 22:34:16 by jlongin          ###   ########.fr       */
+/*   Updated: 2024/11/27 12:21:39 by jlongin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*
@@ -42,7 +42,7 @@ eNcOre Un ExEmPle Pas Facile a Ecrire $
 
 int	main(int argc, char **argv)
 {
-	int	i;
+	int		i;
 
 	i = 0;
 	if (argc == 4)

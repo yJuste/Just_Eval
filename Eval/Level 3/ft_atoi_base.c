@@ -6,7 +6,7 @@
 /*   By: jlongin <jlongin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/24 16:29:09 by jlongin           #+#    #+#             */
-/*   Updated: 2024/11/24 19:33:55 by jlongin          ###   ########.fr       */
+/*   Updated: 2024/11/27 12:31:26 by jlongin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*
@@ -42,10 +42,10 @@ int	ft_tolower(int c)
 
 int	ft_atoi_base(const char *str, int str_base)
 {
-	int	digit;
-	int	res;
-	int	sign;
-	int	c;
+	int		digit;
+	int		res;
+	int		sign;
+	int		c;
 
 	res = 0;
 	sign = 1;

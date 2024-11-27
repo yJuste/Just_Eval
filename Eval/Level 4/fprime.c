@@ -6,7 +6,7 @@
 /*   By: jlongin <jlongin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 15:40:01 by jlongin           #+#    #+#             */
-/*   Updated: 2024/11/25 15:48:07 by jlongin          ###   ########.fr       */
+/*   Updated: 2024/11/27 12:38:59 by jlongin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*
@@ -52,12 +52,12 @@ int	main(int argc, char **argv)
 	int		n;
 	int		i;
 
+	i = 2;
+	n = atoi(argv[1]);
 	if (argc == 2)
 	{
-		n = atoi(argv[1]);
 		if (n == 1)
 			return (printf("1\n"));
-		i = 2;
 		while (i * i <= n)
 		{
 			while (n % i == 0)

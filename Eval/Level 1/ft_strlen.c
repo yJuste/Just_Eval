@@ -6,7 +6,7 @@
 /*   By: jlongin <jlongin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 17:00:17 by jlongin           #+#    #+#             */
-/*   Updated: 2024/11/21 17:01:35 by jlongin          ###   ########.fr       */
+/*   Updated: 2024/11/27 12:20:24 by jlongin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*
@@ -24,7 +24,7 @@ int	ft_strlen(char *str);
 
 int	ft_strlen(char *str)
 {
-	int	i;
+	int		i;
 
 	i = 0;
 	while (str[i])

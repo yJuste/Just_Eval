@@ -6,7 +6,7 @@
 /*   By: jlongin <jlongin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/24 19:15:17 by jlongin           #+#    #+#             */
-/*   Updated: 2024/11/24 19:38:54 by jlongin          ###   ########.fr       */
+/*   Updated: 2024/11/27 12:34:02 by jlongin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*
@@ -35,7 +35,7 @@ $
 
 int	ft_atoi(char *s)
 {
-	int	n;
+	int		n;
 
 	n = 0;
 	while (*s)
@@ -45,7 +45,7 @@ int	ft_atoi(char *s)
 
 void	ft_puthexa(int n)
 {
-	char	str[16];
+	char		str[16];
 
 	str = "0123456789abcdef";
 	if (n >= 16)

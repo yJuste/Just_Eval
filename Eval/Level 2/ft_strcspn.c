@@ -6,7 +6,7 @@
 /*   By: jlongin <jlongin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/23 14:51:08 by jlongin           #+#    #+#             */
-/*   Updated: 2024/11/23 15:07:08 by jlongin          ###   ########.fr       */
+/*   Updated: 2024/11/27 12:23:45 by jlongin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*
@@ -28,8 +28,8 @@ size_t	ft_strcspn(const char *s, const char *reject);
 
 size_t	ft_strcspn(const char *s, const char *reject)
 {
-	size_t	i;
-	size_t	j;
+	size_t		i;
+	size_t		j;
 
 	i = 0;
 	while (s[i])

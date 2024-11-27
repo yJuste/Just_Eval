@@ -6,7 +6,7 @@
 /*   By: jlongin <jlongin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 14:44:06 by jlongin           #+#    #+#             */
-/*   Updated: 2024/11/25 16:26:42 by jlongin          ###   ########.fr       */
+/*   Updated: 2024/11/27 12:49:47 by jlongin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*
@@ -56,6 +56,11 @@ char	*ft_strncpy(char *dest, char *src, int n)
 	while (src[i] && i < n)
 	{
 		dest[i] = src[i];
+		i++;
+	}
+	while (i < n)
+	{
+		dest[i] = '\0';
 		i++;
 	}
 	dest[i] = '\0';

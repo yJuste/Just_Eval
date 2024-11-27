@@ -6,7 +6,7 @@
 /*   By: jlongin <jlongin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/24 16:01:30 by jlongin           #+#    #+#             */
-/*   Updated: 2024/11/24 16:16:58 by jlongin          ###   ########.fr       */
+/*   Updated: 2024/11/27 12:30:16 by jlongin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*
@@ -42,15 +42,15 @@ $>
 
 int	main(int argc, char **argv)
 {
-	int	i;
-	int	j;
-	int	k;
+	int		i;
+	int		j;
+	int		k;
 
+	i = 0;
 	j = 0;
 	k = 0;
 	if (argc == 2)
 	{
-		i = 0;
 		while (argv[1][i] == ' ' || argv[1][i] == '\t')
 			i++;
 		while (argv[1][i])

@@ -6,7 +6,7 @@
 /*   By: jlongin <jlongin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/23 15:19:05 by jlongin           #+#    #+#             */
-/*   Updated: 2024/11/23 18:17:33 by jlongin          ###   ########.fr       */
+/*   Updated: 2024/11/27 12:26:03 by jlongin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*
@@ -26,7 +26,7 @@ char    *ft_strrev(char *str);
 
 int	ft_strlen(char *s)
 {
-	int	i;
+	int		i;
 
 	i = 0;
 	while (str[i])
@@ -36,7 +36,7 @@ int	ft_strlen(char *s)
 
 void	ft_swap(char *a, char *b)
 {
-	char	x;
+	char		x;
 
 	x = *a;
 	*a = *b;
@@ -45,7 +45,7 @@ void	ft_swap(char *a, char *b)
 
 char	*ft_strrev(char *str)
 {
-	int	i;
+	int		i;
 
 	i = 0;
 	while (i < ft_strlen(str) / 2)

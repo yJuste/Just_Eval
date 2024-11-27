@@ -6,7 +6,7 @@
 /*   By: jlongin <jlongin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/24 20:08:55 by jlongin           #+#    #+#             */
-/*   Updated: 2024/11/24 21:00:39 by jlongin          ###   ########.fr       */
+/*   Updated: 2024/11/27 12:36:16 by jlongin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*
@@ -44,16 +44,13 @@ $>
 
 int	main(int argc, char **argv)
 {
-	int	ac;
-	int	i;
-	int	count;
+	int		i;
+	int		ac;
+	int		count;
 
 	ac = 1;
 	if (argc == 1)
-	{
-		write(1, "\n", 1);
-		return (0);
-	}
+		return (write(1, "\n", 1));
 	while (ac < argc)
 	{
 		i = 0;

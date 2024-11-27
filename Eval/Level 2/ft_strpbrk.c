@@ -6,7 +6,7 @@
 /*   By: jlongin <jlongin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/23 15:13:45 by jlongin           #+#    #+#             */
-/*   Updated: 2024/11/23 15:18:35 by jlongin          ###   ########.fr       */
+/*   Updated: 2024/11/27 12:25:38 by jlongin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*
@@ -26,8 +26,8 @@ char	*ft_strpbrk(const char *s1, const char *s2);
 
 char	*ft_strpbrk(const char *s1, const char *s2)
 {
-	int	i;
-	int	j;
+	size_t		i;
+	size_t		j;
 
 	i = 0;
 	while (s1[i])

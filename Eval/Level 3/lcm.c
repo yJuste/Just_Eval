@@ -6,7 +6,7 @@
 /*   By: jlongin <jlongin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/24 17:57:07 by jlongin           #+#    #+#             */
-/*   Updated: 2024/11/24 18:05:01 by jlongin          ###   ########.fr       */
+/*   Updated: 2024/11/27 12:33:01 by jlongin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*
@@ -42,7 +42,7 @@ Your function must be prototyped as follows:
 
 unsigned int	lcm(unsigned int a, unsigned int b)
 {
-	unsigned int	n;
+	unsigned int		n;
 
 	if (a == 0 || b == 0)
 		return (0);

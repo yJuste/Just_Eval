@@ -6,7 +6,7 @@
 /*   By: jlongin <jlongin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/24 17:12:44 by jlongin           #+#    #+#             */
-/*   Updated: 2024/11/24 17:16:22 by jlongin          ###   ########.fr       */
+/*   Updated: 2024/11/27 12:31:37 by jlongin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*
@@ -35,7 +35,7 @@ typedef struct    s_list
 
 int	ft_list_size(t_list *begin_list)
 {
-	int	i;
+	int		i;
 
 	i = 0;
 	while (begin_list)

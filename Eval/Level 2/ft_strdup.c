@@ -6,7 +6,7 @@
 /*   By: jlongin <jlongin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/23 15:08:43 by jlongin           #+#    #+#             */
-/*   Updated: 2024/11/23 15:13:13 by jlongin          ###   ########.fr       */
+/*   Updated: 2024/11/27 12:24:54 by jlongin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*
@@ -25,21 +25,21 @@ char    *ft_strdup(char *src);
 
 char	*ft_strdup(char *src)
 {
-	int		len;
+	int		i;
 	char	*dest;
 
-	len = 0;
-	while (src[len])
-		len++;
-	dest = malloc(sizeof(char) * len + 1);
+	i = 0;
+	while (src[i])
+		i++;
+	dest = malloc(sizeof(char) * (i + 1));
 	if (!dest)
 		return (NULL);
-	len = 0;
-	while (src[len])
+	i = 0;
+	while (src[i])
 	{
-		dest[len] = src[len];
-		len++;
+		dest[i] = src[i];
+		i++;
 	}
-	dest[len] = 0;
+	dest[i] = '\0';
 	return (dest);
 }

@@ -6,7 +6,7 @@
 /*   By: jlongin <jlongin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/24 18:30:44 by jlongin           #+#    #+#             */
-/*   Updated: 2024/11/24 19:36:35 by jlongin          ###   ########.fr       */
+/*   Updated: 2024/11/27 12:33:48 by jlongin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*
@@ -41,13 +41,13 @@ $
 
 int	main(int argc, char **argv)
 {
-	int	n1;
-	int	n2;
+	int		n1;
+	int		n2;
 
+	n1 = atoi(argv[1]);
+	n2 = atoi(argv[2]);
 	if (argc == 3)
 	{
-		n1 = atoi(argv[1]);
-		n2 = atoi(argv[2]);
 		if (n1 > 0 && n2 > 0)
 		{
 			while (n1 != n2)

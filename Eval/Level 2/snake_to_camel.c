@@ -6,7 +6,7 @@
 /*   By: jlongin <jlongin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/24 14:17:58 by jlongin           #+#    #+#             */
-/*   Updated: 2024/11/24 14:37:09 by jlongin          ###   ########.fr       */
+/*   Updated: 2024/11/27 12:27:21 by jlongin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*
@@ -36,8 +36,8 @@ $
 
 int	main(int argc, char **argv)
 {
-	int	i;
-	int	count;
+	int		i;
+	int		count;
 
 	i = 0;
 	count = 0;

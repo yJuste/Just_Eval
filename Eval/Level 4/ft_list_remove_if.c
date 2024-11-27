@@ -6,7 +6,7 @@
 /*   By: jlongin <jlongin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 10:59:33 by jlongin           #+#    #+#             */
-/*   Updated: 2024/11/25 12:59:41 by jlongin          ###   ########.fr       */
+/*   Updated: 2024/11/27 12:47:12 by jlongin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*
@@ -39,31 +39,25 @@ $>
 
 void	ft_list_remove_if(t_list **begin_list, void *data_ref, int (*cmp)())
 {
-	t_list		*temp;
+	t_list		*tmp;
 	t_list		*prev;
 	t_list		*cur;
 
-	if (!begin_list || !(*begin_list))
-		return ;
 	cur = *begin_list;
 	prev = NULL;
 	while (cur)
 	{
 		if (cmp(cur->data, data_ref) == 0)
 		{
-			temp = cur;
+			tmp = cur;
 			if (prev)
 				prev->next = cur->next;
 			else
 				*begin_list = cur->next;
-			cur = cur->next;
-			free(temp->data);
-			free(temp);
+			free(tmp);
 		}
 		else
-		{
 			prev = cur;
-			cur = cur->next;
-		}
+		cur = cur->next;
 	}
 }

@@ -6,7 +6,7 @@
 /*   By: jlongin <jlongin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 17:02:08 by jlongin           #+#    #+#             */
-/*   Updated: 2024/11/21 17:03:44 by jlongin          ###   ########.fr       */
+/*   Updated: 2024/11/27 12:20:34 by jlongin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*
@@ -25,7 +25,7 @@ void	ft_swap(int *a, int *b);
 
 void	ft_swap(int *a, int *b)
 {
-	int	x;
+	int		x;
 
 	x = *a;
 	*a = *b;

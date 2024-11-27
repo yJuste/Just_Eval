@@ -6,7 +6,7 @@
 /*   By: jlongin <jlongin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/24 14:49:21 by jlongin           #+#    #+#             */
-/*   Updated: 2024/11/24 15:11:57 by jlongin          ###   ########.fr       */
+/*   Updated: 2024/11/27 12:28:28 by jlongin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*
@@ -42,13 +42,13 @@ $
 
 int	main(int argc, char **argv)
 {
-	int	i;
-	int	j;
+	int		i;
+	int		j;
 
+	i = 0;
+	j = 0;
 	if (argc == 3)
 	{
-		i = 0;
-		j = 0;
 		while (argv[2][j])
 		{
 			if (argv[1][i] == argv[2][j])

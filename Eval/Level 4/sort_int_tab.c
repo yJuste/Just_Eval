@@ -6,7 +6,7 @@
 /*   By: jlongin <jlongin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 13:09:13 by jlongin           #+#    #+#             */
-/*   Updated: 2024/11/25 13:16:59 by jlongin          ###   ########.fr       */
+/*   Updated: 2024/11/27 12:50:03 by jlongin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*
@@ -38,7 +38,7 @@ void	ft_swap(int *a, int *b)
 
 void	sort_int_tab(int *tab, unsigned int size)
 {
-	unsigned int	i;
+	unsigned int		i;
 
 	i = 0;
 	while (i < size - 1)

@@ -6,7 +6,7 @@
 /*   By: jlongin <jlongin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/24 17:38:20 by jlongin           #+#    #+#             */
-/*   Updated: 2024/11/24 17:42:33 by jlongin          ###   ########.fr       */
+/*   Updated: 2024/11/27 12:32:11 by jlongin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*
@@ -33,9 +33,9 @@ Examples:
 
 int	*ft_rrange(int start, int end)
 {
-	int	i;
-	int	len;
-	int	*str;
+	int		i;
+	int		len;
+	int		*str;
 
 	if (start > end)
 		len = start - end;

@@ -52,26 +52,19 @@ $>
 */
 #include <unistd.h>
 
-void	ft_putnbr(int nb)
+void	ft_putnbr(int n)
 {
-	char	c;
+	char	digit;
 
-	c = 0;
-	if (nb >= 10)
-	{
-		ft_putnbr(nb / 10);
-		ft_putnbr(nb % 10);
-	}
-	else
-	{
-		c = nb + '0';
-		write(1, &c, 1);
-	}
+	if (n >= 10)
+		ft_putnbr(n / 10);
+	digit = n % 10 + '0';
+	write(1, &digit, 1);
 }
 
 int	main(void)
 {
-	int	i;
+	int		i;
 
 	i = 0;
 	while (i <= 100)

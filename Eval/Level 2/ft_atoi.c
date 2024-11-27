@@ -6,7 +6,7 @@
 /*   By: jlongin <jlongin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/23 11:31:51 by jlongin           #+#    #+#             */
-/*   Updated: 2024/11/23 14:47:13 by jlongin          ###   ########.fr       */
+/*   Updated: 2024/11/27 12:23:10 by jlongin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*
@@ -27,8 +27,8 @@ int	ft_atoi(const char *str);
 
 int	ft_atoi(const char *str)
 {
-	int	sign;
-	int	res;
+	int		sign;
+	int		res;
 
 	sign = 1;
 	res = 0;

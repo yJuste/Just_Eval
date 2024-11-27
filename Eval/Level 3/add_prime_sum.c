@@ -6,7 +6,7 @@
 /*   By: jlongin <jlongin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/24 15:14:18 by jlongin           #+#    #+#             */
-/*   Updated: 2024/11/24 15:59:18 by jlongin          ###   ########.fr       */
+/*   Updated: 2024/11/27 12:29:42 by jlongin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*
@@ -37,7 +37,7 @@ $>
 
 int	ft_atoi(char *s)
 {
-	int	res;
+	int		res;
 
 	res = 0;
 	while (*s)
@@ -47,7 +47,7 @@ int	ft_atoi(char *s)
 
 void	ft_putnbr(int n)
 {
-	char	nb;
+	char		nb;
 
 	if (n >= 10)
 		ft_putnbr(n / 10);
@@ -57,7 +57,7 @@ void	ft_putnbr(int n)
 
 int	ft_isprime(int n)
 {
-	int	i;
+	int		i;
 
 	i = 2;
 	if (n <= 1)
@@ -73,15 +73,15 @@ int	ft_isprime(int n)
 
 int	main(int argc, char **argv)
 {
-	int	i;
-	int	nb;
-	int	count;
+	int		i;
+	int		nb;
+	int		count;
 
+	i = 0;
+	count = 0;
+	nb = ft_atoi(argv[1]);
 	if (argc == 2)
 	{
-		i = 0;
-		count = 0;
-		nb = ft_atoi(argv[1]);
 		while (i <= nb)
 		{
 			if (ft_isprime(i))

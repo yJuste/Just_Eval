@@ -6,7 +6,7 @@
 /*   By: jlongin <jlongin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 09:09:40 by jlongin           #+#    #+#             */
-/*   Updated: 2024/11/25 09:38:12 by jlongin          ###   ########.fr       */
+/*   Updated: 2024/11/27 12:37:33 by jlongin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*
@@ -53,13 +53,9 @@ $>
 
 int	ft_atoi(char *s)
 {
-	int	res;
+	int		res;
 
 	res = 0;
-	while (*s == ' ' || (*s >= 9 && *s <= 13))
-		s++;
-	if (*s == '+')
-		s++;
 	while (*s)
 		res = res * 10 + *s++ - '0';
 	return (res);
@@ -67,7 +63,7 @@ int	ft_atoi(char *s)
 
 void	ft_putnbr(int n)
 {
-	char	digit;
+	char		digit;
 
 	if (n >= 10)
 		ft_putnbr(n / 10);
@@ -77,7 +73,7 @@ void	ft_putnbr(int n)
 
 int	ft_strlen(char *s)
 {
-	int	i;
+	int		i;
 
 	i = 0;
 	while (s[i])
@@ -87,14 +83,13 @@ int	ft_strlen(char *s)
 
 int	main(int argc, char **argv)
 {
-	int	i;
-	int	nb;
+	int		i;
+	int		nb;
 
 	i = 1;
-	nb = 0;
+	nb = ft_atoi(argv[1]);
 	if (argc == 2)
 	{
-		nb = ft_atoi(argv[1]);
 		while (i < 10 && nb <= 238609294)
 		{
 			ft_putnbr(i);

@@ -6,7 +6,7 @@
 /*   By: jlongin <jlongin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/24 19:06:00 by jlongin           #+#    #+#             */
-/*   Updated: 2024/11/24 19:35:29 by jlongin          ###   ########.fr       */
+/*   Updated: 2024/11/27 12:33:14 by jlongin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*
@@ -34,7 +34,7 @@ $>
 
 void	ft_putnbr(int n)
 {
-	char	digit;
+	char		digit;
 
 	if (n >= 10)
 		ft_putnbr(n / 10);
