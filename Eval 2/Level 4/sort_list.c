@@ -47,8 +47,8 @@ int ascending(int a, int b)
 
 t_list	*sort_list(t_list *lst, int (*cmp)(int, int))
 {
-	int		x;
-	t_list	*start;
+	int			x;
+	t_list		*start;
 
 	x = 0;
 	start = lst;
