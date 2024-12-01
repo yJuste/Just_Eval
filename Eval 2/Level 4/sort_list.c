@@ -43,7 +43,7 @@ int ascending(int a, int b)
 	return (a <= b);
 }
 */
-#include "ft_sort_list.h"
+#include "sort_list.h"
 
 t_list	*sort_list(t_list *lst, int (*cmp)(int, int))
 {
