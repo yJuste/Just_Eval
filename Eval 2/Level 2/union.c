@@ -42,9 +42,12 @@ $>
 
 int	main(int argc, char **argv)
 {
-	int		i;
-	unsigned char	used[256] = {0};
+	int				i;
+	unsigned char	used[256];
 
+	i = 0;
+	while (i < 256)
+		used[i++] = 0;
 	if (argc == 3)
 	{
 		i = 0;
