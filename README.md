@@ -3,7 +3,7 @@
 ## // INTRO
 
 * Voici les exos d'eval.
-* En cours
+* Fini
 
 ##	/. HELP
 
