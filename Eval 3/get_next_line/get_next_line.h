@@ -6,7 +6,7 @@
 /*   By:                                            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created:   by Just'                               #+#    #+#             */
-/*   Updated: 2025/03/04 17:28:12 by lroussel         ###   ########.fr       */
+/*   Updated:   by lroussel                           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef GET_NEXT_LINE_H
@@ -24,7 +24,8 @@
 #  define BUFFER_SIZE 42
 # endif
 
-// prototype
+//	---------- Prototype ----------
+
 char	*get_next_line(int fd);
 
 #endif
